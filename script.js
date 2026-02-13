@@ -22,6 +22,11 @@ const noTexts = [
   "？你认真的吗…",
   "要不再想想？",
   "不许选这个！ ",
+  "你选这个会后悔的…",
+  "不骗你，你选这个真的会后悔的…",
+  "相信我…",
+  "相信我嘛…",
+  "别逼我求你…",
   "我会很伤心…",
   "不行:(",
 ];
@@ -44,7 +49,7 @@ noButton.addEventListener("click", function () {
   questionText.style.transform = `translateY(-${moveUp}px)`;
 
   // No 文案变化（前 5 次变化）
-  if (clickCount <= 5) {
+  if (clickCount <= 10) {
     noButton.innerText = noTexts[clickCount - 1];
   }
 
@@ -75,4 +80,5 @@ yesButton.addEventListener("click", function () {
 
   // 禁止滚动，保持页面美观
   document.body.style.overflow = "hidden";
+
 });
