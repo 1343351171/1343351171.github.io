@@ -57,8 +57,12 @@ noButton.addEventListener("click", function () {
   if (clickCount === 1) mainImage.src = "images/shocked.png"; // 震惊
   if (clickCount === 2) mainImage.src = "images/think.png"; // 思考
   if (clickCount === 3) mainImage.src = "images/angry.png"; // 生气
-  if (clickCount === 4) mainImage.src = "images/crying.png"; // 哭
-  if (clickCount >= 5) mainImage.src = "images/crying.png"; // 之后一直是哭
+  if (clickCount === 4) mainImage.src = "images/1.png"; // 哭
+  if (clickCount === 5) mainImage.src = "images/2.png"; // 哭
+  if (clickCount === 6) mainImage.src = "images/3.png"; // 哭
+  if (clickCount === 7) mainImage.src = "images/4.png"; // 哭
+  if (clickCount === 8) mainImage.src = "images/5.png"; // 哭
+  if (clickCount >= 9) mainImage.src = "images/crying.png"; // 之后一直是哭
 });
 
 // Yes 按钮点击后，进入表白成功页面
@@ -82,3 +86,4 @@ yesButton.addEventListener("click", function () {
   document.body.style.overflow = "hidden";
 
 });
+
